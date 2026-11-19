@@ -10,7 +10,6 @@ Cenários Visuais é uma skill para o Codex que ajuda profissionais de produto e
 
 ## Início rápido no Codex
 
-
 Baixe ou clone este repositório. Copie a pasta [cenarios-visuais](cenarios-visuais/) inteira para `~/.agents/skills/` para uso pessoal ou para `.agents/skills/` no projeto em que deseja usá-la. Mantenha o `SKILL.md` e o guia visual juntos. Se a skill não aparecer no seletor, reinicie o Codex. [Documentação de skills do Codex](https://learn.chatgpt.com/docs/build-skills)
 
 No Codex, digite o nome da skill e descreva o que você quer investigar:
@@ -19,8 +18,13 @@ No Codex, digite o nome da skill e descreva o que você quer investigar:
 $cenarios-visuais Quero entender por que uma paciente precisou ligar para a clínica depois de tentar remarcar uma consulta pelo celular.
 ```
 
-## Como funciona
+## Quando usar
 
+Use na descoberta quando ainda houver algo a decidir ou validar sobre o que a pessoa precisa, entende ou consegue fazer. Por exemplo, se o envio de um anexo falhar, a pessoa deve tentar de novo antes de concluir ou pode escolher salvar sem ele? Um cenário curto permite mostrar as duas opções e testar se ela entende as consequências.
+
+Dispense para um defeito reproduzível com resultado esperado claro. Por exemplo, se uma imagem anexada some ao reabrir um registro salvo, basta corrigir e verificar se a imagem continua disponível. Se houver também uma decisão em aberto sobre o fluxo, use a skill apenas nesse trecho.
+
+## Como funciona
 
 1. Aceita uma frase, um relato longo ou notas de pesquisa. Pergunta uma coisa por vez quando uma informação ausente muda a história.
 2. Reconstrói o percurso atual pela perspectiva da pessoa, da necessidade imediata até o desfecho, incluindo o que ela faz fora do produto.
@@ -39,7 +43,6 @@ $cenarios-visuais Quero entender por que uma paciente precisou ligar para a clí
 - [cenarios-visuais/](cenarios-visuais/) — instruções da skill e guia de entrega visual.
 - [examples/](examples/) — demonstração ilustrada e exemplos de entrada.
 - [docs/](docs/) — proposta inicial e pesquisa de referências.
-
 
 ## Origem da proposta
 

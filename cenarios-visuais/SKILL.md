@@ -1,12 +1,25 @@
 ---
 name: cenarios-visuais
-description: Ajuda o Engenheiro de Produto a transformar uma necessidade real em um cenário ilustrado na descoberta, antes da implementação. Use ao investigar onde uma experiência trava, mostrar como alguém usaria uma funcionalidade ou comparar o fluxo atual com uma proposta para conversar com usuários.
+description: Ajuda o Engenheiro de Produto a transformar uma necessidade real em um cenário ilustrado na descoberta, antes da implementação. Use quando um cenário ajudar a esclarecer ou validar uma decisão sobre a experiência. Dispense para defeitos reproduzíveis cujo comportamento esperado já esteja definido.
 disable-model-invocation: true
 ---
 
 # Cenários Visuais
 
 Ilustre o fluxo, encontre lacunas e valide a experiência antes do código.
+
+## Decida se vale criar um cenário
+
+Antes de iniciar a descoberta, identifique qual decisão sobre a experiência a simulação ajudaria a tomar ou validar.
+
+- **Use** quando ainda houver dúvida sobre o que a pessoa precisa, o que vai entender ou fazer em uma etapa, ou o que espera conseguir se o fluxo falhar.
+- **Dispense** quando o defeito for reproduzível, o comportamento esperado já estiver definido e bastar corrigir e verificar o fluxo. Diga em linguagem comum por que um cenário visual é dispensável e qual resultado precisa ser verificado. Encerre a triagem sem iniciar a entrevista nem gerar quadros.
+- Se um defeito conhecido também deixar uma decisão de experiência em aberto, separe essa decisão da correção e simule apenas o trecho que precisa ser avaliado. Uma causa técnica ou correção sugerida, por si só, não resolve perguntas sobre o que a pessoa precisa ver ou fazer. Se não der para distinguir os casos com o relato, faça uma pergunta curta de triagem.
+
+### Exemplos de aplicação
+
+- **Dispensar:** a pessoa anexa uma imagem, salva e o anexo some ao reabrir o registro. O resultado esperado já é conhecido: a imagem deve continuar disponível após salvar.
+- **Usar:** quando o envio de um anexo falha, ainda é preciso decidir se a pessoa deve tentar novamente antes de concluir ou se pode escolher salvar sem a imagem. Simule esse momento para avaliar se ela entende suas opções e as consequências.
 
 ## Comece com o que a pessoa trouxe
 
